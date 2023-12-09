@@ -1,0 +1,39 @@
+{% load compress %} {% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+  {% include 'partials/head.html' %}
+
+  <body class="w-full">
+    {% include 'partials/navigation.html' %}
+
+    <div class="w-full relative">
+      <div class="fixed bg-[url('{% static 'images/ecolemoto.jpg' %}')] bg-center bg-no-repeat bg-cover h-96 flex items-center  w-full" style="z-index: 0;">
+        <div class="absolute inset-0" style="background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6));"></div>
+      </div>
+      <div class="relative z-20 mt-4 pb-4">
+        <div class="h-96 flex items-end" style="z-index: 10; padding-bottom: 24px;">
+          <div class="text-white px-8 w-full mt-16">
+            <h3 class="text-sm font-bold md:text-4xl texet-white w-full text-center md:text-rigth" style="">MAITRISEZ VOTRE LIBERTEE</h3>
+            <p class="mt-4 w-11/12 md:w-7/12 text-center mx-auto uppercase">Nous vous accompagnons vers le succès</p>
+            <div class="flex justify-center mt-8 items-center" style="height: 40px;">
+              <a href="#" class="bg-amber-400 py-2 px-8 rounded">A propos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="relative bg-white pt-4">
+        <div class="w-11/12 mx-auto">
+
+            {% block content %}
+        
+            {% endblock %}
+        </div>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+  </body>
+</html>
