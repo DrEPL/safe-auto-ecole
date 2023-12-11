@@ -20,6 +20,9 @@ module.exports = {
           700: '#000000',
         },
       },
+      backgroundImage: {
+        'background': "url('/static/images/ecolemoto.jpg')",
+      }
     },
   },
   plugins: [
