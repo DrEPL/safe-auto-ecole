@@ -51,6 +51,34 @@
   </section>
 {% endblock %}
 
+{% block about %}
+  <section id="about">
+    <div class="mb-10">
+      <h2 class="uppercase text-purple-700 font-bold md:text-2xl text-lg">NOS OBJECTIFS</h2>
+      <hr class="w-24 h-2 mb-4 bg-purple-300 border-0 rounded" />
+      <ul class="space-y-1 list-disc list-inside">
+        <li>Fournir une formation complète en matière de sécurité et de conduite automobile et moto.</li>
+        <li>Sensibiliser les conducteurs aux risques et aux comportements responsables sur la route.</li>
+        <li>Réduire les accidents de la circulation par le biais des programmes créatifs et de formations adaptées.</li>
+      </ul>
+    </div>
+    <div class="mb-10">
+      <h2 class="uppercase text-purple-700 font-bold md:text-2xl text-lg">HORAIRES</h2>
+      <hr class="w-24 h-2 mb-4 bg-purple-300 border-0 rounded" />
+      <div class="mb-4">
+        <p class="font-bold">Lundi à Vendredi</p>
+        <p>07h - 13h</p>
+        <p>14h - 19h</p>
+      </div>
+
+      <div>
+        <p class="font-bold">Samedi</p>
+        <span>07h - 15h</span>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+
 {% block formations %}
   <section id="formations">
     <div class="mb-10">
@@ -82,6 +110,40 @@
           </ul>
         </div>
       </div>
+
+      <div class="flex md:flex-row flex-col md:gap-x-8 gap-y-4 mb-10">
+        <div class="border-2 border-solid border-purple-700 uppercase justify-center items-center flex w-64">
+          <p class="font-semibold">PROGRAMMES SPÉCIFIQUES</p>
+        </div>
+        <div>
+          <ul class="ps-5 space-y-1 list-decimal list-inside">
+            <li>Formations pour nouveaux conducteurs</li>
+            <li>Cours de perfectionnement pour conducteurs expérimentés</li>
+            <li>Sensibilisation aux dangers spécifiques de la conduite auto.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex md:flex-row flex-col md:gap-x-8 gap-y-4 mb-10">
+        <div class="border-2 border-solid border-purple-700 uppercase justify-center items-center flex w-64">
+          <p class="font-semibold"> TARIFS FORMATIONS</p>
+        </div>
+        <div>
+          <ul class="ps-5 space-y-1 list-decimal list-inside">
+            <li>Formation Voiture : 55.000 FCFA</li>
+            <li>Formation Moto : 35.000 FCFA.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+
+{% block contact %}
+  <section id="contact">
+    <div class="mb-10">
+      <h2 class="uppercase text-purple-700 font-bold md:text-2xl text-lg">LES FORMATIONS</h2>
+      <hr class="w-24 h-2 mb-4 bg-purple-300 border-0 rounded" />
 
       <div class="flex md:flex-row flex-col md:gap-x-8 gap-y-4 mb-10">
         <div class="border-2 border-solid border-purple-700 uppercase justify-center items-center flex w-64">
