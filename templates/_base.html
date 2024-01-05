@@ -16,7 +16,7 @@
           <h3 class="mx-auto text-lg font-bold md:text-5xl texet-white w-full text-center md:text-rigth uppercase">MAITRISEZ VOTRE LIBERTé</h3>
           <p class="mx-auto text-sm mt-4 w-11/12 md:w-7/12 font-light text-center uppercase">Nous vous accompagnons vers le succès</p>
           <div class="flex justify-center mt-8 items-center mx-auto">
-            <button type="button" class="text-white bg-primary-700 hover:bg-primary-400 focus:outline-none  font-medium rounded-lg text-sm px-4 py-2 text-center">Accueil</button>
+            <button type="button" class="text-white bg-primary-700 hover:bg-primary-400 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center">Accueil</button>
           </div>
         </div>
       </div>
@@ -36,33 +36,37 @@
 
         {% endblock %}
       </div>
-
     </div>
-    
+
     {% include 'footer.html' %}
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var sections = document.querySelectorAll("section");
-
-      sections.forEach(function (section) {
+      // Obtenez l'année en cours
+      const currentYear = new Date().getFullYear()
+      
+      // Mettez à jour le texte dans la balise span avec le copyright
+      document.getElementById('copyright').innerHTML = `&copy; ${currentYear} <a href="#" class="hover:text-gray-200 font-bold">GRAND RHEMA</a><span class="text-white"> | SAFE</span>. All Rights Reserved, developped by Dr EPL.`
+      document.addEventListener('DOMContentLoaded', function () {
+        var sections = document.querySelectorAll('section')
+      
+        sections.forEach(function (section) {
           new Waypoint({
-              element: section,
-              handler: function (direction) {
-                  document.querySelectorAll("nav a").forEach(function (link) {
-                      link.classList.remove("text-primary-700");
-                      link.classList.add("text-gray-900");
-                  });
-
-                  document.querySelector('a[href="#' + section.id + '"]').classList.remove("text-gray-900");
-                  document.querySelector('a[href="#' + section.id + '"]').classList.add("text-primary-700");
-              },
-              offset: '25%' // Déclenche le waypoint lorsque le haut de la section atteint 25% de la fenêtre
-          });
-      });
-  });
-</script>
+            element: section,
+            handler: function (direction) {
+              document.querySelectorAll('nav a').forEach(function (link) {
+                link.classList.remove('text-primary-700')
+                link.classList.add('text-gray-900')
+              })
+      
+              document.querySelector('a[href="#' + section.id + '"]').classList.remove('text-gray-900')
+              document.querySelector('a[href="#' + section.id + '"]').classList.add('text-primary-700')
+            },
+            offset: '25%' // Déclenche le waypoint lorsque le haut de la section atteint 25% de la fenêtre
+          })
+        })
+      })
+    </script>
   </body>
 </html>
