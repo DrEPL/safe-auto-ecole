@@ -1,8 +1,12 @@
 body::-webkit-scrollbar {
-    display: none;
+    display: none !important;
 }
 
 body {
     font-family: 'Raleway', sans-serif !important;
     font-family: 'Ubuntu', sans-serif !important;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none !important;
 }

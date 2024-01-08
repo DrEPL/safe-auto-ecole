@@ -61,45 +61,6 @@
       <h2 class="uppercase text-primary-700 font-bold md:text-2xl text-lg">LES FORMATIONS</h2>
       <hr class="w-24 h-2 mb-4 bg-purple-300 border-0 rounded" />
 
-      <div class="flex md:flex-row flex-col md:gap-x-8 gap-y-4 mb-10">
-        <div class="border-2 border-solid border-primary-700 uppercase px-3 justify-center items-center flex w-64">
-          <p class="font-semibold">Formation théorique</p>
-        </div>
-        <div>
-          <ul class="ps-5 space-y-1 list-decimal list-inside">
-            <li>Cours de code de la route</li>
-            <li>Sensibilisation aux règles de conduite</li>
-            <li>Formation aux premiers secours.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="flex md:flex-row flex-col md:gap-x-8 gap-y-4 mb-10">
-        <div class="border-2 border-solid border-primary-700 uppercase justify-center items-center flex w-64">
-          <p class="font-semibold">Formation PRATIQUE</p>
-        </div>
-        <div>
-          <ul class="ps-5 space-y-1 list-decimal list-inside">
-            <li>Conduite Automobile</li>
-            <li>Conduite Moto</li>
-            <li>Simulations d’Urgences.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="flex md:flex-row flex-col md:gap-x-8 gap-y-4 mb-10">
-        <div class="border-2 border-solid border-primary-700 uppercase justify-center items-center flex w-64">
-          <p class="font-semibold">PROGRAMMES SPÉCIFIQUES</p>
-        </div>
-        <div>
-          <ul class="ps-5 space-y-1 list-decimal list-inside">
-            <li>Formations pour nouveaux conducteurs</li>
-            <li>Cours de perfectionnement pour conducteurs expérimentés</li>
-            <li>Sensibilisation aux dangers spécifiques de la conduite auto.</li>
-          </ul>
-        </div>
-      </div>
-
       {% comment %} <div class="flex md:flex-row flex-col md:gap-x-8 gap-y-4 mb-10">
         <div class="border-2 border-solid border-primary-700 uppercase justify-center items-center flex w-64">
           <p class="font-semibold">TARIFS FORMATIONS</p>
@@ -113,63 +74,116 @@
       </div> {% endcomment %}
     </div>
 
-    <div>
+    <div class="mb-5 gap-y-4 md:gap-y-0 flex flex-col md:flex-row md:overflow-x-auto md:gap-x-4 hide-scrollbar">
+      <div class="max-w-xl md:h-[200px] flex-shrink-0 overflow-hidden bg-white border border-gray-200 rounded-lg shadow flex md:flex-row flex-col">
+        <div class="flex-shrink-0 w-full h-[250px] md:h-[200px] md:w-[200px]">
+          <img class="w-full object-cover h-full" src="{% static 'images/ico4.jpg' %}" alt="" />
+        </div>
+        <div class="flex-1 p-5">
+          <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-90">FORMATION THÉORIQUE</h5>
+          <ul class="ps-5 list-decimal list-inside pb-2 text-sm">
+            <li>Cours de code de la route</li>
+            <li>Sensibilisation aux règles de conduite</li>
+            <li>Formation aux premiers secours.</li>
+          </ul>
+          <a href="#" class="items-center text-sm font-medium text-center text-primary-700  hover:text-primary-400">lire plus</a>
+        </div>
+      </div>
+      
+      <div class="max-w-xl md:h-[200px] flex-shrink-0 overflow-hidden bg-white border border-gray-200 rounded-lg shadow flex md:flex-row flex-col">
+        <div class="flex-shrink-0 w-full h-[250px] md:h-[200px] md:w-[200px]">
+          <img class="w-full object-cover h-full" src="{% static 'images/ico4.jpg' %}" alt="" />
+        </div>
+        <div class="flex-1 p-5">
+          <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-90">TARIFS FORMATIONS</h5>
+          <p class="text-center inline-block left-0 right-0 text-gray-90 text-sm">Formation Moto : 35.000 FCFA</p>
+          <p class="text-center left-0 right-0 text-gray-90 text-sm">Formation Auto : 55.000 FCFA</p>
+          <a href="#" class="items-center text-sm font-medium text-center text-primary-700  hover:text-primary-400">lire plus</a>
+        </div>
+      </div>
+
+      <div class="max-w-xl md:h-[200px] flex-shrink-0 overflow-hidden bg-white border border-gray-200 rounded-lg shadow flex md:flex-row flex-col">
+        <div class="flex-shrink-0 w-full h-[250px] md:h-[200px] md:w-[200px]">
+          <img class="w-full h-full object-cover" src="{% static 'images/ico4.jpg' %}" alt="" />
+        </div>
+        <div class="p-5 flex-1">
+          <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-90">FORMATION PRATIQUE</h5>
+          <ul class="ps-5 list-decimal list-inside pb-2 text-sm">
+            <li>Conduite Automobile</li>
+            <li>Conduite Moto</li>
+            <li>Simulations d’Urgences.</li>
+          </ul>
+          <a href="#" class="items-center text-sm font-medium text-center text-primary-700  hover:text-primary-400">lire plus</a>
+        </div>
+      </div>
+
+      <div class="max-w-xl md:h-[200px] flex-shrink-0 overflow-hidden bg-white border border-gray-200 rounded-lg shadow flex md:flex-row flex-col">
+        <div class="flex-shrink-0 w-full h-[250px] md:h-[200px] md:w-[200px]">
+          <img class="w-full h-full object-cover" src="{% static 'images/ico4.jpg' %}" alt="" />
+        </div>
+        <div class="p-5 flex-1">
+          <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-90">PROGRAMMES SPÉCIFIQUES</h5>
+          <ul class="ps-5 list-decimal list-inside pb-2 text-sm">
+            <li>Formations pour nouveaux conducteurs</li>
+            <li>Cours de perfectionnement pour conducteurs expérimentés</li>
+            <li>Sensibilisation aux dangers spécifiques de la conduite auto.</li>
+          </ul>
+          <a href="#" class="items-center text-sm font-medium text-center text-primary-700  hover:text-primary-400">lire plus</a>
+        </div>
+      </div>
+    </div>
+
+    {% comment %} <div>
       <h2 class="uppercase text-primary-700 text-center font-bold md:text-2xl text-lg">TARIFS FORMATIONS</h2>
       <hr class="w-24 h-2 mb-6 bg-purple-300 border-0 rounded mx-auto" />
       <div class="flex flex-row flex-wrap gap-3 justify-center">
-        <div class="w-[300px] " data-aos="fade-up" data-aos-delay="200">
+        <div class="w-[300px]" data-aos="fade-up" data-aos-delay="200">
           <div class="relative overflow-hidden h-full group rounded-lg">
-            <img src="{% static 'images/ico4.jpg' %}" class="w-full h-auto transition-transform duration-300  transform group-hover:scale-110" alt="Remodeling 1" />
+            <img src="{% static 'images/ico4.jpg' %}" class="w-full h-auto transition-transform duration-300 transform group-hover:scale-110" alt="Remodeling 1" />
             <div class="opacity-100 absolute inset-0 z-3 transition-all ease-in-out duration-300 md:bg-opacity-50 md:bg-black p-3.5 group-hover:opacity-100 md:opacity-0">
               <h4 class="text-primary-700 inline-block bg-white text-sm font-medium p-1.5 md:p-2.5 rounded-md">TARIF FORMATION</h4>
               <p class="absolute bottom-2.5 text-center inline-block left-0 right-0 text-white text-lg font-semibold">Formation Moto : 35.000 FCFA</p>
             </div>
           </div>
         </div>
-        
-        <div class="w-[300px] " data-aos="fade-up" data-aos-delay="300">
+
+        <div class="w-[300px]" data-aos="fade-up" data-aos-delay="300">
           <div class="relative overflow-hidden h-full group rounded-lg">
-            <img src="{% static 'images/ico2.jpg' %}" class="w-full h-auto transition-transform duration-300  transform group-hover:scale-110" alt="Remodeling 1" />
+            <img src="{% static 'images/ico2.jpg' %}" class="w-full h-auto transition-transform duration-300 transform group-hover:scale-110" alt="Remodeling 1" />
             <div class="opacity-100 absolute inset-0 z-3 transition-all ease-in-out duration-300 md:bg-opacity-50 md:bg-black p-3.5 group-hover:opacity-100 md:opacity-0">
               <h4 class="text-primary-700 inline-block bg-white text-sm font-medium p-1.5 md:p-2.5 rounded-md">TARIF FORMATION</h4>
               <p class="absolute bottom-2.5 text-center inline-block left-0 right-0 text-white text-lg font-semibold">Formation Automobile : 55.000 FCFA</p>
             </div>
           </div>
         </div>
-
       </div>
-    </div>
+    </div> {% endcomment %}
   </section>
 {% endblock %}
 
 {% block contact %}
   <section id="contact">
-    <div class="mb-10">
+    <div class="mt-10">
       <h2 class="uppercase text-primary-700 font-bold md:text-2xl text-lg">NOS CONTACTS</h2>
       <hr class="w-24 h-2 mb-4 bg-purple-300 border-0 rounded" />
-
-      <div class="flex md:flex-row flex-col md:gap-x-8 gap-y-4 mb-10">
-        <div class="border-2 border-solid border-primary-700 uppercase justify-center items-center flex w-64">
-          <p class="font-semibold">PROGRAMMES SPÉCIFIQUES</p>
+      <div class="md:flex">
+        <div class="w-full">
+          <form class="max-w-lg mx-auto">
+            <div class="mb-5">
+              <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 " placeholder="name@example.com" required />
+            </div>
+            <div class="mb-5 flex gap-x-2">
+              <input type="text" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 " placeholder="Nom et prénom" required />
+              <input type="text" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 " placeholder="Objet" required />
+            </div>
+            <div class="mb-5">
+              <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300" placeholder="Message..."></textarea>
+            </div>
+            <button type="submit" class="text-white bg-primary-700 hover:bg-primary-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Envoyer</button>
+          </form>
         </div>
-        <div>
-          <ul class="ps-5 space-y-1 list-decimal list-inside">
-            <li>Formations pour nouveaux conducteurs</li>
-            <li>Cours de perfectionnement pour conducteurs expérimentés</li>
-            <li>Sensibilisation aux dangers spécifiques de la conduite auto.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="flex md:flex-row flex-col md:gap-x-8 gap-y-4 mb-10">
-        <div class="border-2 border-solid border-primary-700 uppercase justify-center items-center flex w-64">
-          <p class="font-semibold">TARIFS FORMATIONS</p>
-        </div>
-        <div>
-          <ul class="ps-5 space-y-1 list-decimal list-inside">
-            <li>Formation Voiture : 55.000 FCFA</li>
-            <li>Formation Moto : 35.000 FCFA.</li>
-          </ul>
+        <div class="w-full mt-5 md:mt-0 py-5 h-[300px] bg-gray-400 rounded-md flex justify-center items-center">
+          <p class="text-white">Maps</p>
         </div>
       </div>
     </div>

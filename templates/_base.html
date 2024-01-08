@@ -8,7 +8,7 @@
     {% include 'partials/navigation.html' %}
 
     <div class="w-full relative">
-      <div class="bg-fixed bg-background bg-center bg-no-repeat bg-cover h-[450px] flex items-end pb-8 w-full">
+      <div class="bg-fixed bg-background bg-center md:bg-no-repeat bg-cover md:h-[450px] h-[350px] flex items-end pb-8 w-full">
         <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-80"></div>
         {% comment %} <div class="absolute inset-0" style="background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6));"></div> {% endcomment %}
         {% comment %} <img src="{% static 'images/ecolemoto.jpg' %}" alt="" srcset="" /> {% endcomment %}
@@ -33,6 +33,10 @@
         {% endblock %}
 
         {% block formations %}
+
+        {% endblock %}
+
+        {% block contact %}
 
         {% endblock %}
       </div>
