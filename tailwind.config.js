@@ -15,7 +15,7 @@ module.exports = {
         },
       },
       backgroundImage: {
-        'background': "url('/static/images/ecolemoto.jpg')",
+        'background': "url('/static/images/header-1.jpeg')",
         'footer': "url('/static/images/liberte.jpg')",
       }
     },
