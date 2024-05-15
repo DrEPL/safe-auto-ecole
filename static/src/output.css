@@ -1830,6 +1830,15 @@ input:checked + .toggle-bg {
   background-color: rgb(255 255 255 / 0.5);
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-yellow-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(194 120 3 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-\[10\%\] {
   --tw-bg-opacity: 10%;
 }

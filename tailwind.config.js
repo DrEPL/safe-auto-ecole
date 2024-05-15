@@ -16,6 +16,7 @@ module.exports = {
       },
       backgroundImage: {
         'background': "url('/static/images/header-1.jpeg')",
+        'background-mobile': "url('/static/images/liberte.jpg')",
         'footer': "url('/static/images/liberte.jpg')",
       }
     },

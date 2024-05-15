@@ -4,11 +4,11 @@
 <html lang="fr">
   {% include 'partials/head.html' %}
 
-  <body class="w-full mt-[90px] mx-auto">
+  <body class="w-full mx-auto">
     {% include 'partials/navigation.html' %}
 
     <div class="w-full relative mx-auto">
-      <div class="group bg-fixed md:bg-background md:bg-bottom bg-no-repeat bg-auto md:bg-cover md:h-[450px] h-[350px] flex items-end pb-8 w-full">
+      <div class="bg-bottom bg-background md:bg-bottom bg-no-repeat md:bg-cover md:h-[450px] h-[350px] flex items-end pb-8 w-full">
         <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-30"></div>
         {% comment %}
         <div class="absolute inset-0" style="
@@ -138,14 +138,31 @@
             // ======= Sticky
           
             window.onscroll = function () {
-              /*var ud_header = document.querySelector('.header');
+              var ud_header = document.querySelector('.header');
+              var menu_scroll = document.querySelectorAll('.menu-scroll');
               var sticky = ud_header.offsetTop;
+
           
-              if (window.pageY > sticky) {
-                ud_header.classList.add('sticky');
+              if (window.pageYOffset > sticky) {
+                //ud_header.classList.remove('sticky');
+                //ud_header.classList.add('fixed');
+                //ud_header.classList.remove('bg-yellow-500');
+                ud_header.classList.add('bg-purple-100/50');
+                ud_header.classList.add('backdrop-blur-md');
+                ud_header.classList.add('border');
+                menu_scroll.forEach((e)=>{
+                  e.classList.remove('text-white');
+                })
               } else {
-                ud_header.classList.remove('sticky');
-              }*/
+                //ud_header.classList.add('sticky');
+                menu_scroll.forEach((e)=>{
+                  e.classList.add('text-white');
+                })
+                ud_header.classList.remove('border');
+                ud_header.classList.remove('bg-purple-100/50');
+                ud_header.classList.remove('backdrop-blur-md');
+                //ud_header.classList.remove('fixed');
+              }
           
               // show or hide the back-top-top button
           
