@@ -14,16 +14,8 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
 
-      - name: 🔨 Build Project
-          run: |
-            # compile css
-            npx tailwindcss -i ./static/src/input.css -o ./static/src/output.css --watch
-
-            # compile aos 
-            npx webpack --config webpack.config.js
-
         with:
-          server: safeautoecole.cg
+          server: ftp.sc3etor1822.universe.wf
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
           server-dir: /safeautoecole.cg/
