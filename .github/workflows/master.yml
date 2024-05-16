@@ -18,4 +18,4 @@ jobs:
           server: ftp.sc3etor1822.universe.wf
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
-          server-dir: /safeautoecole.cg/
+          server-dir: /
