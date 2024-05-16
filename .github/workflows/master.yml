@@ -13,10 +13,7 @@ jobs:
 
       - name: 🔨 Build Project
           run: |
-            # compile css
             npx tailwindcss -i ./static/src/input.css -o ./static/src/output.css
-
-            # compile aos 
             npx webpack --config webpack.config.js
 
       - name: 📂 Sync files
