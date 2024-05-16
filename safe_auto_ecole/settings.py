@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -81,6 +82,13 @@ DATABASES = {
     }
 }
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'  # Par exemple : smtp.gmail.com
+EMAIL_PORT = 587  # Port pour l'h么te SMTP
+EMAIL_USE_TLS = True  # Utiliser TLS
+DEFAULT_FROM_EMAIL = 'contact.legrandmagazine@gmail.com'  # L'adresse email qui appara卯tra dans le champ "De"
+EMAIL_HOST_USER = 'contact.legrandmagazine@gmail.com'  # Votre adresse e-mail
+EMAIL_HOST_PASSWORD = 'fuhumkwdgikhycpw'  # Votre mot de passe
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -133,3 +141,8 @@ STATICFILES_FINDERS = ('compressor.finders.CompressorFinder',)
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
+
+STATIC_ROOT = BASE_DIR / "collectstatic"
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+MEDIA_URL = '/'
