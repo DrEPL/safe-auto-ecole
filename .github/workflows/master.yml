@@ -11,9 +11,6 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v3
 
-      - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-
       - name: 🔨 Build Project
           run: |
             # compile css
@@ -21,6 +18,9 @@ jobs:
 
             # compile aos 
             npx webpack --config webpack.config.js
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
 
         with:
           server: ftp.sc3etor1822.universe.wf
