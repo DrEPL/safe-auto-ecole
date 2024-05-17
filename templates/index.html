@@ -7,12 +7,6 @@
   +242 06 946 28 86
 {% endcomment %}
 
-{% block content %}
-  <div>
-    {% comment %} <div class="w-full h-96 overflow-clip bg-[url('{% static 'images/ecolemoto.jpg' %}')] bg-center bg-no-repeat mr-3 bg-cover"></div> {% endcomment %}
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque omnis maxime doloribus! Recusandae, nesciunt vitae suscipit expedita, incidunt placeat delectus vero aperiam in nostrum similique quis? Aut totam quibusdam nemo magni odit facilis, ipsam corporis! Numquam, mollitia. Culpa tempora quisquam sit enim, eum dolor ipsum, veritatis voluptatem nam quod officiis!</p>
-  </div>
-{% endblock %}
 
 {% block accueil %}
   <section id="accueil" class="bg-white pt-[80px] pb-[50px]">
@@ -21,7 +15,7 @@
         <div class="w-full md:flex md:flex-wrap gap-y-2" >
           <div class="md:w-1/2 relative" data-aos="zoom-in-right">
             <div class="md:z-10 md:absolute md:top-0 md:w-2/3">
-              <img src="{% static 'images/img-0.jpeg' %}" alt="" srcset="" />
+              <img src="{% static 'images/img-0.jpeg' %}" alt="" srcset="" class=" rounded-lg md:rounded-none"/>
             </div>
             <div class="md:z-10 md:absolute md:top-10 md:left-24 md:w-2/3 hidden md:block">
               <img src="{% static 'images/header.jpeg' %}" alt="" srcset="" />

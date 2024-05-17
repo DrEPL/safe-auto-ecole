@@ -1639,6 +1639,10 @@ input:checked + .toggle-bg {
   border-radius: 0.375rem;
 }
 
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
 .rounded-e-lg {
   border-start-end-radius: 0.5rem;
   border-end-end-radius: 0.5rem;
@@ -2674,6 +2678,10 @@ input:checked + .toggle-bg {
 
   .md\:overflow-x-auto {
     overflow-x: auto;
+  }
+
+  .md\:rounded-none {
+    border-radius: 0px;
   }
 
   .md\:border-0 {
